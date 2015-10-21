@@ -3,6 +3,7 @@
 #include <test.h>
 
 int hello() {
-	kprintf("Hello World!\n");
+	kprintf("Hi, and Welcome to OS161, ELI!\n");
+	kprintf("\n");
 	return 0;
 }
