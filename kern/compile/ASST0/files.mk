@@ -96,6 +96,7 @@ SRCS+=$(KTOP)/test/malloctest.c
 SRCS+=$(KTOP)/test/synchtest.c
 SRCS+=$(KTOP)/test/threadtest.c
 SRCS+=$(KTOP)/test/tt3.c
+SRCS+=$(KTOP)/test/usertest.c
 SRCS+=$(KTOP)/test/uw-tests.c
 SRCS+=$(KTOP)/thread/clock.c
 SRCS+=$(KTOP)/thread/spinlock.c

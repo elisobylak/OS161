@@ -56,6 +56,7 @@ int queuetest(int, char **);
 int threadtest(int, char **);
 int threadtest2(int, char **);
 int threadtest3(int, char **);
+int threadtestFun(int, char **);
 int semtest(int, char **);
 int locktest(int, char **);
 int cvtest(int, char **);
@@ -91,5 +92,8 @@ void kmain(char *bootstring);
 
 /* Hello function to boot */
 int hello(void);
+
+/* userTest function */
+int usertest(int, char**);
 
 #endif /* _TEST_H_ */
