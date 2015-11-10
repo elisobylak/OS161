@@ -82,11 +82,11 @@ threadfunSet(void *junk, unsigned long num)
 
 static
 void
-runthreads()
+runthreads(int input)
 {
 	char name[16];
 	int i, result;
-	int numr = 8;
+	int numr = input;
 
 	for (i=0; i< numr; i++) {
 		snprintf(name, sizeof(name), "threadtest%d", i);
@@ -105,14 +105,15 @@ runthreads()
 }
 
 int
-threadtestFun(int nargs, char **args)
+threadtestFun(int nargs, char *args[])
 {
 	(void)nargs;
-	(void)args;
+	//(void)args;
+	int input = *args[1] - 48;
 
 	init_sem();
 	kprintf("Starting threadfun test ... \n");
-	runthreads();
+	runthreads(input);
 	kprintf("\nThread test done. \n");
 
 	return 0;
