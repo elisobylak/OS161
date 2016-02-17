@@ -89,7 +89,7 @@ threadfunSet(void *junk, unsigned long num)
 
 	//kprintf("I should be out of the four loop\n");
         //kprintf("value of counter is: %d \n ", counterC);
-          //Added lock here
+        //Added lock here
 
 	(void)junk;
 

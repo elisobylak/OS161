@@ -108,6 +108,7 @@ runthreads(int input)
 	for (i=0; i< numr; i++) {
 		P(tsem);
 	}
+	kprintf("value at end is : %d", counter);
 }
 
 int

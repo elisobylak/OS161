@@ -79,7 +79,7 @@ threadfunSet(void *junk, unsigned long num)
 	//int counterB = 0;
 	//Added lock here
 
-	kprintf("\n going into for loop, It should be 10,000 when it exits\n");
+	kprintf("Going into for loop\n");
 
 	//kprintf("The value of the counter before the loop is: %d \n",counterB);
 	for(int i = 0; i < 10000; i++) {
