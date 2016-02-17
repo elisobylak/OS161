@@ -1,3 +1,4 @@
+
 /*
  * Thread test code.
  */
@@ -6,11 +7,15 @@
 #include <thread.h>
 #include <synch.h>
 #include <test.h>
-
 #define NTHREADS  8
 
+
 static struct semaphore *tsem = NULL;
-int counter = 0;
+//added lock here
+static struct lock *counter_lock = NULL;
+int counterB = 0;
+//Added lock here
+counter_lock = lock_create("counter lock");
 
 static
 void
@@ -72,16 +77,11 @@ static
 void
 threadfunSet(void *junk, unsigned long num) 
 {
-	//int ch = '0' + num;
-
-	for(int i = 0; i < 10000; i++) {
-		counter++;
-	}
-	kprintf("value at the end is: %d \n", counter);
-
+	int ch = '0' + num;
+	
 	(void)junk;
-	(void)num;
-	//putch(ch);
+
+	putch(ch);
 
 	V(tsem);
 }
@@ -99,6 +99,15 @@ runthreads(int input)
 		result = thread_fork(name, NULL,
 				     threadfunSet,
 				     NULL, i);
+		//Added lock here
+		lock_acquire(counter_lock);
+		counterB++;
+		//Added lcok here
+		lock_release(counter_lock);
+		kprintf("value of counter is: " + counterB);
+		//Added lock here
+		lock_destroy(counter_lock);		
+
 		if (result) {
 			panic("threadtest: thread_fork failed %s)\n", 
 			      strerror(result));
@@ -111,7 +120,7 @@ runthreads(int input)
 }
 
 int
-unsafeThreadCounter(int nargs, char *args[])
+lockThreadCounter(int nargs, char *args[])
 {
 	(void)nargs;
 	//(void)args;
@@ -119,7 +128,9 @@ unsafeThreadCounter(int nargs, char *args[])
 	//int input = **args;
 
 	init_sem();
-	kprintf("Starting unsafe counter test ... \n");
+	kprintf("Starting threadfun test ... \n");
+	//kprintf("\n It should print 0...10,000 \n");
+	kprintf("It should print out, value of counter is: " + input);
 	runthreads(input);
 	kprintf("\nThread test done. \n");
 
@@ -157,3 +168,4 @@ threadtest2(int nargs, char **args)
 }
 
 */
+

@@ -437,6 +437,9 @@ file		test/usertest.c
 file		test/bitmaptest.c
 file		test/threadtest.c
 file		test/threadfun.c
+file		test/unsafeCounter.c
+file		test/lockCounter.c
+file		test/spinlockCounter.c
 file		test/tt3.c
 file		test/synchtest.c
 file		test/malloctest.c

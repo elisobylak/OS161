@@ -58,6 +58,8 @@ int threadtest2(int, char **);
 int threadtest3(int, char **);
 int threadtestFun(int, char **);
 int unsafeThreadCounter(int, char **);
+int lockThreadCounter(int, char **);
+int spinlockThreadCounter(int, char**);
 int semtest(int, char **);
 int locktest(int, char **);
 int cvtest(int, char **);

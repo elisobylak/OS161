@@ -461,6 +461,8 @@ static const char *testmenu[] = {
 	"[tt2] Thread test 2                 ",
 	"[ttF] Thread test Fun		     ",
 	"[utC] Unsafe Thread Counter	     ",
+	"[ltC] Lock Thread Counter	     ",
+	"[slC] Spin Lock Counter	     ",
 	"[tt3] Thread test 3                 ",
 #if OPT_NET
 	"[net] Network test                  ",
@@ -579,6 +581,8 @@ static struct {
 	{ "tt3",	threadtest3 },
 	{ "ttF",	threadtestFun },
 	{ "utC",	unsafeThreadCounter },
+	{ "ltC",	lockThreadCounter },
+	{ "slC",	spinlockThreadCounter },
 	{ "sy1",	semtest },
 
 	/* synchronization assignment tests */

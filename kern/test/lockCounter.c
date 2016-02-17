@@ -10,7 +10,9 @@
 #define NTHREADS  8
 
 static struct semaphore *tsem = NULL;
-int counter = 0;
+static struct lock *counter_lock = NULL;
+
+int counterB = 0;
 
 static
 void
@@ -73,15 +75,29 @@ void
 threadfunSet(void *junk, unsigned long num) 
 {
 	//int ch = '0' + num;
+	(void)num;
+	//int counterB = 0;
+	//Added lock here
 
+	kprintf("\n going into for loop, It should be 10,000 when it exits\n");
+
+	//kprintf("The value of the counter before the loop is: %d \n",counterB);
 	for(int i = 0; i < 10000; i++) {
-		counter++;
+		//kprintf("this is going!");
+		lock_acquire(counter_lock);
+		counterB++;
+		lock_release(counter_lock);
 	}
-	kprintf("value at the end is: %d \n", counter);
+
+	//kprintf("I should be out of the four loop\n");
+        //kprintf("value of counter is: %d \n ", counterB);
+          //Added lock here
 
 	(void)junk;
-	(void)num;
+
 	//putch(ch);
+
+	//lock_destroy(counter_lock);
 
 	V(tsem);
 }
@@ -99,19 +115,23 @@ runthreads(int input)
 		result = thread_fork(name, NULL,
 				     threadfunSet,
 				     NULL, i);
+
 		if (result) {
 			panic("threadtest: thread_fork failed %s)\n", 
 			      strerror(result));
 		}
 	}
 
+
 	for (i=0; i< numr; i++) {
 		P(tsem);
 	}
+
+	kprintf("Value of counter after increment is: %d", counterB);
 }
 
 int
-unsafeThreadCounter(int nargs, char *args[])
+lockThreadCounter(int nargs, char *args[])
 {
 	(void)nargs;
 	//(void)args;
@@ -119,7 +139,10 @@ unsafeThreadCounter(int nargs, char *args[])
 	//int input = **args;
 
 	init_sem();
-	kprintf("Starting unsafe counter test ... \n");
+	kprintf("Starting lock counter test ... \n");
+
+	counter_lock = lock_create("counter_lock");
+
 	runthreads(input);
 	kprintf("\nThread test done. \n");
 
