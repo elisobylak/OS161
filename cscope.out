@@ -1,4 +1,4 @@
-cscope 15 $HOME/os161               0000696135
+cscope 15 $HOME/os161               0000697613
 	@build/install/hostinclude/hostcompat.h
 
 31 
@@ -19939,7 +19939,7 @@ _OPT_SYNCHPROBS_H_
 
 2 c⁄° 
 	gbuûdvîsi⁄
- = 71;
+ = 102;
 
 3 c⁄° 
 	gbuûdc⁄fig
@@ -46792,88 +46792,92 @@ lockThªadCou¡î
 (, **);
 
 62 
-£mã°
+•ölockThªadCou¡î
 (, **);
 
 63 
-lockã°
+£mã°
 (, **);
 
 64 
+lockã°
+(, **);
+
+65 
 cvã°
 (, **);
 
-66 #ifde‡
+67 #ifde‡
 UW
 
 
-68 
+69 
 uwlockã°1
 (, **);
 
-70 
+71 
 uwvm°©°e°
 (, **);
 
-74 
+75 
 f°e°
 (, **);
 
-75 
+76 
 ªad°ªss
 (, **);
 
-76 
+77 
 wrôe°ªss
 (, **);
 
-77 
+78 
 wrôe°ªss2
 (, **);
 
-78 
+79 
 ¸óã°ªss
 (, **);
 
-79 
+80 
 ¥ötfûe
 (, **);
 
-82 
+83 
 mÆlo˘e°
 (, **);
 
-83 
+84 
 mÆloc°ªss
 (, **);
 
-84 
+85 
 √âe°
 (, **);
 
-87 
+88 
 ru≈rogøm
 (*
 ¥og«me
 );
 
-90 
+91 
 míu
 (*
 ¨g°r
 );
 
-93 
+94 
 kmaö
 (*
 boŸ°rög
 );
 
-96 
+97 
 hñlo
 ();
 
-99 
+100 
 u£πe°
 (, **);
 
@@ -54779,19 +54783,19 @@ a
 	gã°míu
 [] = {
 
-466 #i‡
+467 #i‡
 OPT_NET
 
 
-472 #ifde‡
+473 #ifde‡
 UW
 
 
-481 
+482 
 NULL
 
 
-486 
+487 
 	$cmd_ã°míu
 (
 n
@@ -54799,53 +54803,53 @@ n
 a
 )
 
-488 ()
+489 ()
 n
 ;
 
-489 ()
+490 ()
 a
 ;
 
-491 
+492 
 	`showmíu
 ("OS/161Åe°†míu", 
 ã°míu
 );
 
-492 
+493 
 	`k¥ötf
 (" (1) TheseÅests will fail until you finishÅhe "
 
-494 
+495 
 	`k¥ötf
 (" (4) TheseÅests may fail until you finishÅhe "
 
-496 
+497 
 	`k¥ötf
 ("\n");
 
-499 
+500 
 	}
 }
 
-501 c⁄° *
+502 c⁄° *
 	gmaömíu
 [] = {
 
-504 #i‡
+505 #i‡
 OPT_SYNCHPROBS
 
 
-506 #ifde‡
+507 #ifde‡
 UW
 
 
-512 
+513 
 NULL
 
 
-517 
+518 
 	$cmd_maömíu
 (
 n
@@ -54853,29 +54857,29 @@ n
 a
 )
 
-519 ()
+520 ()
 n
 ;
 
-520 ()
+521 ()
 a
 ;
 
-522 
+523 
 	`showmíu
 ("OS/161 kî√»míu", 
 maömíu
 );
 
-524 
+525 
 	}
 }
 
-531 c⁄° *
+532 c⁄° *
 	m«me
 ;
 
-532 (*
+533 (*
 	mfunc
 )(
 	m«rgs
@@ -54883,209 +54887,213 @@ maömíu
 	m¨gs
 );
 
-533 } 
+534 } 
 	gcmdèbÀ
 [] = {
 
-535 { "?", 
+536 { "?", 
 cmd_maömíu
  },
 
-536 { "h", 
+537 { "h", 
 cmd_maömíu
  },
 
-537 { "hñp", 
+538 { "hñp", 
 cmd_maömíu
  },
 
-538 { "?o", 
+539 { "?o", 
 cmd_›smíu
  },
 
-539 { "?t", 
+540 { "?t", 
 cmd_ã°míu
  },
 
-542 { "s", 
+543 { "s", 
 cmd_shñl
  },
 
-543 { "p", 
+544 { "p", 
 cmd_¥og
  },
 
-544 { "mou¡", 
+545 { "mou¡", 
 cmd_mou¡
  },
 
-545 { "unmou¡", 
+546 { "unmou¡", 
 cmd_unmou¡
  },
 
-546 { "boŸfs", 
+547 { "boŸfs", 
 cmd_boŸfs
  },
 
-547 { "pf", 
+548 { "pf", 
 ¥ötfûe
  },
 
-548 { "cd", 
+549 { "cd", 
 cmd_chdú
  },
 
-549 { "pwd", 
+550 { "pwd", 
 cmd_pwd
  },
 
-550 { "sync", 
+551 { "sync", 
 cmd_sync
  },
 
-551 { "∑nic", 
+552 { "∑nic", 
 cmd_∑nic
  },
 
-552 { "q", 
+553 { "q", 
 cmd_quô
  },
 
-553 { "exô", 
+554 { "exô", 
 cmd_quô
  },
 
-554 { "hÆt", 
+555 { "hÆt", 
 cmd_quô
  },
 
-556 #i‡
+557 #i‡
 OPT_SYNCHPROBS
 
 
-558 { "•1", 
+559 { "•1", 
 whÆem©ög
  },
 
-559 #ifde‡
+560 #ifde‡
 UW
 
 
-560 { "•2", 
+561 { "•2", 
 ˇtmou£
  },
 
-565 { "kh", 
+566 { "kh", 
 cmd_khóp°©s
  },
 
-568 { "ut1", 
+569 { "ut1", 
 u£πe°
 },
 
-571 { "©", 
+572 { "©", 
 ¨øyã°
  },
 
-572 { "bt", 
+573 { "bt", 
 bôm≠ã°
  },
 
-573 { "km1", 
+574 { "km1", 
 mÆlo˘e°
  },
 
-574 { "km2", 
+575 { "km2", 
 mÆloc°ªss
  },
 
-575 #i‡
+576 #i‡
 OPT_NET
 
 
-576 { "√t", 
+577 { "√t", 
 √âe°
  },
 
-578 { "â1", 
+579 { "â1", 
 thªadã°
  },
 
-579 { "â2", 
+580 { "â2", 
 thªadã°2
  },
 
-580 { "â3", 
+581 { "â3", 
 thªadã°3
  },
 
-581 { "âF", 
+582 { "âF", 
 thªadã°Fun
  },
 
-582 { "utC", 
+583 { "utC", 
 unß„ThªadCou¡î
  },
 
-583 { "…C", 
+584 { "…C", 
 lockThªadCou¡î
  },
 
-584 { "sy1", 
+585 { "¶C", 
+•ölockThªadCou¡î
+ },
+
+586 { "sy1", 
 £mã°
  },
 
-587 { "sy2", 
+589 { "sy2", 
 lockã°
  },
 
-588 { "sy3", 
+590 { "sy3", 
 cvã°
  },
 
-589 #ifde‡
+591 #ifde‡
 UW
 
 
-590 { "uw1", 
+592 { "uw1", 
 uwlockã°1
  },
 
-591 { "uw2", 
+593 { "uw2", 
 uwvm°©°e°
  },
 
-595 { "fs1", 
+597 { "fs1", 
 f°e°
  },
 
-596 { "fs2", 
+598 { "fs2", 
 ªad°ªss
  },
 
-597 { "fs3", 
+599 { "fs3", 
 wrôe°ªss
  },
 
-598 { "fs4", 
+600 { "fs4", 
 wrôe°ªss2
  },
 
-599 { "fs5", 
+601 { "fs5", 
 ¸óã°ªss
  },
 
-601 { 
+603 { 
 NULL
 , NULL }
 
-609 
+611 
 	$cmd_di•©ch
 (*
 cmd
 )
 
-611 
+613 
 time_t
  
 bef‹e£cs
@@ -55095,7 +55103,7 @@ a·î£cs
 £cs
 ;
 
-612 
+614 
 uöt32_t
  
 bef‹í£cs
@@ -55105,31 +55113,31 @@ a·în£cs
 n£cs
 ;
 
-613 *
+615 *
 ¨gs
 [
 MAXMENUARGS
 ];
 
-614 
+616 
 «rgs
 =0;
 
-615 *
+617 *
 w‹d
 ;
 
-616 *
+618 *
 c⁄ãxt
 ;
 
-617 
+619 
 i
 , 
 ªsu…
 ;
 
-619 
+621 
 w‹d
  = 
 	`°πok_r
@@ -55139,13 +55147,13 @@ cmd
 c⁄ãxt
 );
 
-620 
+622 
 w‹d
  !
 NULL
 ;
 
-621 
+623 
 w‹d
  = 
 	`°πok_r
@@ -55155,21 +55163,21 @@ NULL
 c⁄ãxt
 )) {
 
-623 i‡(
+625 i‡(
 «rgs
  >
 MAXMENUARGS
 ) {
 
-624 
+626 
 	`k¥ötf
 ("CommandÜine hasÅoo many words\n");
 
-625  
+627  
 E2BIG
 ;
 
-627 
+629 
 ¨gs
 [
 «rgs
@@ -55177,11 +55185,11 @@ E2BIG
 w‹d
 ;
 
-630 i‡(
+632 i‡(
 «rgs
 ==0) {
 
-634 
+636 
 i
 =0; 
 cmdèbÀ
@@ -55189,7 +55197,7 @@ cmdèbÀ
 «me
 ; i++) {
 
-635 i‡(*
+637 i‡(*
 cmdèbÀ
 [
 i
@@ -55201,7 +55209,7 @@ i
 ¨gs
 [0], cmdtable[i].name)) {
 
-636 
+638 
 	`KASSERT
 (
 cmdèbÀ
@@ -55213,7 +55221,7 @@ func
 NULL
 );
 
-638 
+640 
 	`gëtime
 (&
 bef‹e£cs
@@ -55221,7 +55229,7 @@ bef‹e£cs
 bef‹í£cs
 );
 
-640 
+642 
 ªsu…
  = 
 cmdèbÀ
@@ -55235,7 +55243,7 @@ i
 ¨gs
 );
 
-642 
+644 
 	`gëtime
 (&
 a·î£cs
@@ -55243,7 +55251,7 @@ a·î£cs
 a·în£cs
 );
 
-643 
+645 
 	`gëöãrvÆ
 (
 bef‹e£cs
@@ -55251,49 +55259,49 @@ bef‹e£cs
 bef‹í£cs
 ,
 
-644 
+646 
 a·î£cs
 , 
 a·în£cs
 ,
 
-645 &
+647 &
 £cs
 , &
 n£cs
 );
 
-647 
+649 
 	`k¥ötf
 ("OperationÅook %lu.%09lu seconds\n",
 
-648 (Ë
+650 (Ë
 £cs
 ,
 
-649 (Ë
+651 (Ë
 n£cs
 );
 
-651  
+653  
 ªsu…
 ;
 
-655 
+657 
 	`k¥ötf
 ("%s: Comm™dÇŸ found\n", 
 ¨gs
 [0]);
 
-656  
+658  
 EINVAL
 ;
 
-657 
+659 
 	}
 }
 
-668 
+670 
 	$míu_execuã
 (*
 löe
@@ -55301,19 +55309,19 @@ löe
 ißrgs
 )
 
-670 *
+672 *
 comm™d
 ;
 
-671 *
+673 *
 c⁄ãxt
 ;
 
-672 
+674 
 ªsu…
 ;
 
-674 
+676 
 comm™d
  = 
 	`°πok_r
@@ -55323,13 +55331,13 @@ löe
 c⁄ãxt
 );
 
-675 
+677 
 comm™d
  !
 NULL
 ;
 
-676 
+678 
 comm™d
  = 
 	`°πok_r
@@ -55339,17 +55347,17 @@ NULL
 c⁄ãxt
 )) {
 
-678 i‡(
+680 i‡(
 ißrgs
 ) {
 
-679 
+681 
 	`k¥ötf
 ("OS/161 kî√l: %s\n", 
 comm™d
 );
 
-682 
+684 
 ªsu…
  = 
 	`cmd_di•©ch
@@ -55357,11 +55365,11 @@ comm™d
 comm™d
 );
 
-683 i‡(
+685 i‡(
 ªsu…
 ) {
 
-684 
+686 
 	`k¥ötf
 ("Míu comm™d faûed: %s\n", 
 	`°ªº‹
@@ -55369,51 +55377,51 @@ comm™d
 ªsu…
 ));
 
-685 i‡(
+687 i‡(
 ißrgs
 ) {
 
-686 
+688 
 	`∑nic
 ("FailureÖrocessing kernelárguments\n");
 
-690 
+692 
 	}
 }
 
-710 
+712 
 	$míu
 (*
 ¨gs
 )
 
-712 
+714 
 buf
 [64];
 
-714 
+716 
 	`míu_execuã
 (
 ¨gs
 , 1);
 
-717 
+719 
 	`k¥ötf
 ("OS/161 kernel [? for menu]: ");
 
-718 
+720 
 	`kgës
 (
 buf
 , (buf));
 
-719 
+721 
 	`míu_execuã
 (
 buf
 , 0);
 
-721 
+723 
 	}
 }
 
@@ -61975,83 +61983,71 @@ num
 
 82 
 	`k¥ötf
-("going into forÜoop\n");
+("Going into forÜoop\n");
 
-83 
+85 
 i
  = 0; i < 10000; i++) {
 
-84 
+87 
 	`lock_acquúe
 (
 cou¡î_lock
 );
 
-85 
+88 
 cou¡îB
 ++;
 
-86 
+89 
 	`lock_ªÀa£
 (
 cou¡î_lock
 );
 
-89 
-	`k¥ötf
-("vÆuêo‡cou¡î is: " + 
-cou¡îB
-);
-
-92 ()
+96 ()
 junk
 ;
 
-96 
-	`lock_de°roy
-(
-cou¡î_lock
-);
-
-98 
+102 
 	`V
 (
 t£m
 );
 
-99 
+103 
 	}
 }
 
-103 
+107 
 	$ru¡hªads
 (
 öput
 )
 
-105 
+109 
 «me
 [16];
 
-106 
+110 
 i
 , 
 ªsu…
 ;
 
-107 
+111 
 numr
  = 
 öput
 ;
 
-109 
+113 
 i
 =0; i< 
 numr
 ; i++) {
 
-110 
+114 
 	`¢¥ötf
 (
 «me
@@ -62059,7 +62055,7 @@ numr
 i
 );
 
-111 
+115 
 ªsu…
  = 
 	`thªad_f‹k
@@ -62069,47 +62065,53 @@ i
 NULL
 ,
 
-112 
+116 
 thªadfunSë
 ,
 
-113 
+117 
 NULL
 , 
 i
 );
 
-115 i‡(
+119 i‡(
 ªsu…
 ) {
 
-116 
+120 
 	`∑nic
 ("threadtest:Åhread_fork failed %s)\n",
 
-117 
+121 
 	`°ªº‹
 (
 ªsu…
 ));
 
-122 
+126 
 i
 =0; i< 
 numr
 ; i++) {
 
-123 
+127 
 	`P
 (
 t£m
 );
 
-125 
+130 
+	`k¥ötf
+("VÆuêo‡cou¡îá·î in¸emíàis: %d", 
+cou¡îB
+);
+
+131 
 	}
 }
 
-128 
+134 
 	$lockThªadCou¡î
 (
 «rgs
@@ -62117,41 +62119,41 @@ t£m
 ¨gs
 [])
 
-130 ()
+136 ()
 «rgs
 ;
 
-132 
+138 
 öput
  = *
 ¨gs
 [1] - 48;
 
-135 
+141 
 	`öô_£m
 ();
 
-136 
+142 
 	`k¥ötf
 ("StartingÜock counterÅest ... \n");
 
-138 
+144 
 cou¡î_lock
  = 
 	`lock_¸óã
 ("counter_lock");
 
-140 
+146 
 	`ru¡hªads
 (
 öput
 );
 
-141 
+147 
 	`k¥ötf
 ("\nThreadÅest done. \n");
 
-144 
+150 
 	}
 }
 
@@ -62508,6 +62510,274 @@ NTHREADS
 ("NoÇetwork supportávailable\n");
 
 44 
+	}
+}
+
+	@kern/test/spinlockCounter.c
+
+4 
+	~<ty≥s.h
+>
+
+5 
+	~<lib.h
+>
+
+6 
+	~<thªad.h
+>
+
+7 
+	~<synch.h
+>
+
+8 
+	~<ã°.h
+>
+
+10 
+	#NTHREADS
+ 8
+
+	)
+
+12 
+£m≠h‹e
+ *
+	gt£m
+ = 
+NULL
+;
+
+13 
+lock
+ *
+	gcou¡î_lock
+;
+
+15 
+	gcou¡îC
+ = 0;
+
+19 
+	$öô_£m
+()
+
+21 i‡(
+t£m
+==
+NULL
+) {
+
+22 
+t£m
+ = 
+	`£m_¸óã
+("tsem", 0);
+
+23 i‡(
+t£m
+ =
+NULL
+) {
+
+24 
+	`∑nic
+("threadtest: sem_create failed\n");
+
+27 
+	}
+}
+
+75 
+	$thªadfunSë
+(*
+junk
+, 
+num
+)
+
+78 ()
+num
+;
+
+82 
+	`k¥ötf
+("Going into forÜoop \n");
+
+83 
+i
+ = 0; i < 10000; i++) {
+
+85 
+	`•ölock_acquúe
+(&
+cou¡î_lock
+->
+lk_•ölock
+);
+
+86 
+cou¡îC
+++;
+
+87 
+	`•ölock_ªÀa£
+(&
+cou¡î_lock
+->
+lk_•ölock
+);
+
+94 ()
+junk
+;
+
+100 
+	`V
+(
+t£m
+);
+
+101 
+	}
+}
+
+105 
+	$ru¡hªads
+(
+öput
+)
+
+107 
+«me
+[16];
+
+108 
+i
+, 
+ªsu…
+;
+
+109 
+numr
+ = 
+öput
+;
+
+111 
+i
+=0; i< 
+numr
+; i++) {
+
+112 
+	`¢¥ötf
+(
+«me
+, “ame), "thªadã°%d", 
+i
+);
+
+113 
+ªsu…
+ = 
+	`thªad_f‹k
+(
+«me
+, 
+NULL
+,
+
+114 
+thªadfunSë
+,
+
+115 
+NULL
+, 
+i
+);
+
+117 i‡(
+ªsu…
+) {
+
+118 
+	`∑nic
+("threadtest:Åhread_fork failed %s)\n",
+
+119 
+	`°ªº‹
+(
+ªsu…
+));
+
+124 
+i
+=0; i< 
+numr
+; i++) {
+
+125 
+	`P
+(
+t£m
+);
+
+128 
+	`k¥ötf
+("ThêvÆuêo‡thêcou¡îáàthêíd is: %d \n", 
+cou¡îC
+);
+
+129 
+	}
+}
+
+132 
+	$•ölockThªadCou¡î
+(
+«rgs
+, *
+¨gs
+[])
+
+134 ()
+«rgs
+;
+
+136 
+öput
+ = *
+¨gs
+[1] - 48;
+
+139 
+	`öô_£m
+();
+
+140 
+	`k¥ötf
+("StartingÜock counterÅest ... \n");
+
+141 
+cou¡î_lock
+ = 
+	`lock_¸óã
+("counter_lock");
+
+144 
+	`ru¡hªads
+(
+öput
+);
+
+145 
+	`k¥ötf
+("\nThreadÅest done. \n");
+
+148 
 	}
 }
 
@@ -65001,61 +65271,67 @@ junk
 num
 )
 
-75 
-ch
- = '0' + 
-num
-;
+77 
+i
+ = 0; i < 10000; i++) {
 
-77 ()
+78 
+cou¡î
+++;
+
+80 
+	`k¥ötf
+("vÆuê©Åhêíd is: %d \n", 
+cou¡î
+);
+
+82 ()
 junk
 ;
 
-79 
-	`putch
-(
-ch
-);
+83 ()
+num
+;
 
-81 
+86 
 	`V
 (
 t£m
 );
 
-82 
+87 
 	}
 }
 
-86 
+91 
 	$ru¡hªads
 (
 öput
 )
 
-88 
+93 
 «me
 [16];
 
-89 
+94 
 i
 , 
 ªsu…
 ;
 
-90 
+95 
 numr
  = 
 öput
 ;
 
-92 
+97 
 i
 =0; i< 
 numr
 ; i++) {
 
-93 
+98 
 	`¢¥ötf
 (
 «me
@@ -65063,7 +65339,7 @@ numr
 i
 );
 
-94 
+99 
 ªsu…
  = 
 	`thªad_f‹k
@@ -65073,57 +65349,53 @@ i
 NULL
 ,
 
-95 
+100 
 thªadfunSë
 ,
 
-96 
+101 
 NULL
 , 
 i
 );
 
-97 
-cou¡î
-++;
-
-98 
-	`k¥ötf
-("%i\n", 
-cou¡î
-);
-
-100 i‡(
+102 i‡(
 ªsu…
 ) {
 
-101 
+103 
 	`∑nic
 ("threadtest:Åhread_fork failed %s)\n",
 
-102 
+104 
 	`°ªº‹
 (
 ªsu…
 ));
 
-106 
+108 
 i
 =0; i< 
 numr
 ; i++) {
 
-107 
+109 
 	`P
 (
 t£m
 );
 
-109 
+111 
+	`k¥ötf
+("vÆuê©Énd i†: %d", 
+cou¡î
+);
+
+112 
 	}
 }
 
-112 
+115 
 	$unß„ThªadCou¡î
 (
 «rgs
@@ -65131,41 +65403,35 @@ t£m
 ¨gs
 [])
 
-114 ()
+117 ()
 «rgs
 ;
 
-116 
+119 
 öput
  = *
 ¨gs
 [1] - 48;
 
-119 
+122 
 	`öô_£m
 ();
 
-120 
+123 
 	`k¥ötf
 ("Starting unsafe counterÅest ... \n");
 
-122 
-	`k¥ötf
-("IàshouldÖröàout, vÆuêo‡cou¡î is: " + 
-öput
-);
-
-123 
+124 
 	`ru¡hªads
 (
 öput
 );
 
-124 
+125 
 	`k¥ötf
 ("\nThreadÅest done. \n");
 
-127 
+128 
 	}
 }
 
@@ -138617,8 +138883,8 @@ i
 1
 .
 0
-519
-14591
+520
+14619
 build/install/hostinclude/hostcompat.h
 build/install/include/assert.h
 build/install/include/err.h
@@ -138882,6 +139148,7 @@ kern/test/fstest.c
 kern/test/lockCounter.c
 kern/test/malloctest.c
 kern/test/nettest.c
+kern/test/spinlockCounter.c
 kern/test/synchtest.c
 kern/test/threadfun.c
 kern/test/threadtest.c
