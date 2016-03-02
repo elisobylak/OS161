@@ -1,4 +1,4 @@
-cscope 15 $HOME/os161               0000697613
+cscope 15 $HOME/os161               0000710155
 	@build/install/hostinclude/hostcompat.h
 
 31 
@@ -13139,23 +13139,41 @@ pid_t
 »tv®
 );
 
+135 
+SYS_fÜk
+:
+
+136 
+”r
+ = 
+	`sys_fÜk
+((
+pid_t
+ *)&
+»tv®
+,
+
 137 
+tf
+);
+
+143 
 	`k´štf
 ("UnknowÀsysÿÎ %d\n", 
 ÿÎno
 );
 
-138 
+144 
 ”r
  = 
 ENOSYS
 ;
 
-143 ià(
+149 ià(
 ”r
 ) {
 
-149 
+155 
 tf
 ->
 tf_v0
@@ -13163,13 +13181,13 @@ tf_v0
 ”r
 ;
 
-150 
+156 
 tf
 ->
 tf_a3
  = 1;
 
-154 
+160 
 tf
 ->
 tf_v0
@@ -13177,19 +13195,19 @@ tf_v0
 »tv®
 ;
 
-155 
+161 
 tf
 ->
 tf_a3
  = 0;
 
-163 
+169 
 tf
 ->
 tf_•c
  += 4;
 
-166 
+172 
 	`KASSERT
 (
 cu¹h»ad
@@ -13197,7 +13215,7 @@ cu¹h»ad
 t_cur¥l
  == 0);
 
-168 
+174 
 	`KASSERT
 (
 cu¹h»ad
@@ -13205,23 +13223,43 @@ cu¹h»ad
 t_lhigh_couÁ
  == 0);
 
-169 
+175 
 	}
 }
 
-180 
+186 
 	$’‹r_fÜked_´oûss
-(
-Œ­äame
- *
-tf
+(* 
+¬g1
+, 
+¬g2
 )
 
-182 ()
+188 
+Œ­äame
+ 
 tf
 ;
 
-183 
+189 (è
+¬g2
+;
+
+191 
+tf
+ = *(
+Œ­äame
+*)
+¬g1
+;
+
+193 
+	`ms_u£rmode
+(&
+tf
+);
+
+194 
 	}
 }
 
@@ -19944,6 +19982,2020 @@ _OPT_SYNCHPROBS_H_
 3 cÚ¡ 
 	gbudcÚfig
 [] = "ASST1";
+
+	@kern/compile/ASST2/autoconf.c
+
+2 
+	~<ty³s.h
+>
+
+3 
+	~<lib.h
+>
+
+4 
+	~"autocÚf.h
+"
+
+6 
+autocÚf_b“p
+(
+b“p_soác
+ *, );
+
+7 
+autocÚf_cÚ
+(
+cÚ_soác
+ *, );
+
+8 
+autocÚf_emu
+(
+emu_soác
+ *, );
+
+9 
+autocÚf_lhd
+(
+lhd_soác
+ *, );
+
+10 
+autocÚf_Ìªdom
+(
+Ìªdom_soác
+ *, );
+
+11 
+autocÚf_l£r
+(
+l£r_soác
+ *, );
+
+12 
+autocÚf_Éim”
+(
+Éim”_soác
+ *, );
+
+13 
+autocÚf_É¿û
+(
+É¿û_soác
+ *, );
+
+14 
+autocÚf_¿ndom
+(
+¿ndom_soác
+ *, );
+
+15 
+autocÚf_¹şock
+(
+¹şock_soác
+ *, );
+
+16 
+	gÃxtun™_b“p
+;
+
+17 
+	gÃxtun™_cÚ
+;
+
+18 
+	gÃxtun™_emu
+;
+
+19 
+	gÃxtun™_lhd
+;
+
+20 
+	gÃxtun™_Ìªdom
+;
+
+21 
+	gÃxtun™_l£r
+;
+
+22 
+	gÃxtun™_Éim”
+;
+
+23 
+	gÃxtun™_É¿û
+;
+
+24 
+	gÃxtun™_¿ndom
+;
+
+25 
+	gÃxtun™_¹şock
+;
+
+29 
+	$Œy©ch_emu_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+31 
+emu_soác
+ *
+dev
+;
+
+32 
+»suÉ
+;
+
+34 
+dev
+ = 
+	`©ch_emu_to_Ïmebus
+(
+devun™
+, 
+bus
+);
+
+35 ià(
+dev
+==
+NULL
+) {
+
+38 
+	`k´štf
+("emu%d‡ˆÏmebus%d", 
+devun™
+, 
+busun™
+);
+
+39 
+»suÉ
+ = 
+	`cÚfig_emu
+(
+dev
+, 
+devun™
+);
+
+40 ià(
+»suÉ
+ != 0) {
+
+41 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+43  
+»suÉ
+;
+
+45 
+	`k´štf
+("\n");
+
+46 
+Ãxtun™_emu
+ = 
+devun™
++1;
+
+47 
+	`autocÚf_emu
+(
+dev
+, 
+devun™
+);
+
+49 
+	}
+}
+
+53 
+	$Œy©ch_É¿û_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+55 
+É¿û_soác
+ *
+dev
+;
+
+56 
+»suÉ
+;
+
+58 
+dev
+ = 
+	`©ch_É¿û_to_Ïmebus
+(
+devun™
+, 
+bus
+);
+
+59 ià(
+dev
+==
+NULL
+) {
+
+62 
+	`k´štf
+("É¿û%d‡ˆÏmebus%d", 
+devun™
+, 
+busun™
+);
+
+63 
+»suÉ
+ = 
+	`cÚfig_É¿û
+(
+dev
+, 
+devun™
+);
+
+64 ià(
+»suÉ
+ != 0) {
+
+65 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+67  
+»suÉ
+;
+
+69 
+	`k´štf
+("\n");
+
+70 
+Ãxtun™_É¿û
+ = 
+devun™
++1;
+
+71 
+	`autocÚf_É¿û
+(
+dev
+, 
+devun™
+);
+
+73 
+	}
+}
+
+77 
+	$Œy©ch_Éim”_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+79 
+Éim”_soác
+ *
+dev
+;
+
+80 
+»suÉ
+;
+
+82 
+dev
+ = 
+	`©ch_Éim”_to_Ïmebus
+(
+devun™
+, 
+bus
+);
+
+83 ià(
+dev
+==
+NULL
+) {
+
+86 
+	`k´štf
+("Éim”%d‡ˆÏmebus%d", 
+devun™
+, 
+busun™
+);
+
+87 
+»suÉ
+ = 
+	`cÚfig_Éim”
+(
+dev
+, 
+devun™
+);
+
+88 ià(
+»suÉ
+ != 0) {
+
+89 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+91  
+»suÉ
+;
+
+93 
+	`k´štf
+("\n");
+
+94 
+Ãxtun™_Éim”
+ = 
+devun™
++1;
+
+95 
+	`autocÚf_Éim”
+(
+dev
+, 
+devun™
+);
+
+97 
+	}
+}
+
+101 
+	$Œy©ch_Ìªdom_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+103 
+Ìªdom_soác
+ *
+dev
+;
+
+104 
+»suÉ
+;
+
+106 
+dev
+ = 
+	`©ch_Ìªdom_to_Ïmebus
+(
+devun™
+, 
+bus
+);
+
+107 ià(
+dev
+==
+NULL
+) {
+
+110 
+	`k´štf
+("Ìªdom%d‡ˆÏmebus%d", 
+devun™
+, 
+busun™
+);
+
+111 
+»suÉ
+ = 
+	`cÚfig_Ìªdom
+(
+dev
+, 
+devun™
+);
+
+112 ià(
+»suÉ
+ != 0) {
+
+113 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+115  
+»suÉ
+;
+
+117 
+	`k´štf
+("\n");
+
+118 
+Ãxtun™_Ìªdom
+ = 
+devun™
++1;
+
+119 
+	`autocÚf_Ìªdom
+(
+dev
+, 
+devun™
+);
+
+121 
+	}
+}
+
+125 
+	$Œy©ch_lhd_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+127 
+lhd_soác
+ *
+dev
+;
+
+128 
+»suÉ
+;
+
+130 
+dev
+ = 
+	`©ch_lhd_to_Ïmebus
+(
+devun™
+, 
+bus
+);
+
+131 ià(
+dev
+==
+NULL
+) {
+
+134 
+	`k´štf
+("lhd%d‡ˆÏmebus%d", 
+devun™
+, 
+busun™
+);
+
+135 
+»suÉ
+ = 
+	`cÚfig_lhd
+(
+dev
+, 
+devun™
+);
+
+136 ià(
+»suÉ
+ != 0) {
+
+137 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+139  
+»suÉ
+;
+
+141 
+	`k´štf
+("\n");
+
+142 
+Ãxtun™_lhd
+ = 
+devun™
++1;
+
+143 
+	`autocÚf_lhd
+(
+dev
+, 
+devun™
+);
+
+145 
+	}
+}
+
+149 
+	$Œy©ch_l£r_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+151 
+l£r_soác
+ *
+dev
+;
+
+152 
+»suÉ
+;
+
+154 
+dev
+ = 
+	`©ch_l£r_to_Ïmebus
+(
+devun™
+, 
+bus
+);
+
+155 ià(
+dev
+==
+NULL
+) {
+
+158 
+	`k´štf
+("l£r%d‡ˆÏmebus%d", 
+devun™
+, 
+busun™
+);
+
+159 
+»suÉ
+ = 
+	`cÚfig_l£r
+(
+dev
+, 
+devun™
+);
+
+160 ià(
+»suÉ
+ != 0) {
+
+161 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+163  
+»suÉ
+;
+
+165 
+	`k´štf
+("\n");
+
+166 
+Ãxtun™_l£r
+ = 
+devun™
++1;
+
+167 
+	`autocÚf_l£r
+(
+dev
+, 
+devun™
+);
+
+169 
+	}
+}
+
+173 
+	$Œy©ch_b“p_to_Éim”
+(
+devun™
+, 
+Éim”_soác
+ *
+bus
+, 
+busun™
+)
+
+175 
+b“p_soác
+ *
+dev
+;
+
+176 
+»suÉ
+;
+
+178 
+dev
+ = 
+	`©ch_b“p_to_Éim”
+(
+devun™
+, 
+bus
+);
+
+179 ià(
+dev
+==
+NULL
+) {
+
+182 
+	`k´štf
+("b“p%d‡ˆÉim”%d", 
+devun™
+, 
+busun™
+);
+
+183 
+»suÉ
+ = 
+	`cÚfig_b“p
+(
+dev
+, 
+devun™
+);
+
+184 ià(
+»suÉ
+ != 0) {
+
+185 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+187  
+»suÉ
+;
+
+189 
+	`k´štf
+("\n");
+
+190 
+Ãxtun™_b“p
+ = 
+devun™
++1;
+
+191 
+	`autocÚf_b“p
+(
+dev
+, 
+devun™
+);
+
+193 
+	}
+}
+
+197 
+	$Œy©ch_cÚ_to_l£r
+(
+devun™
+, 
+l£r_soác
+ *
+bus
+, 
+busun™
+)
+
+199 
+cÚ_soác
+ *
+dev
+;
+
+200 
+»suÉ
+;
+
+202 
+dev
+ = 
+	`©ch_cÚ_to_l£r
+(
+devun™
+, 
+bus
+);
+
+203 ià(
+dev
+==
+NULL
+) {
+
+206 
+	`k´štf
+("cÚ%d‡ˆl£r%d", 
+devun™
+, 
+busun™
+);
+
+207 
+»suÉ
+ = 
+	`cÚfig_cÚ
+(
+dev
+, 
+devun™
+);
+
+208 ià(
+»suÉ
+ != 0) {
+
+209 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+211  
+»suÉ
+;
+
+213 
+	`k´štf
+("\n");
+
+214 
+Ãxtun™_cÚ
+ = 
+devun™
++1;
+
+215 
+	`autocÚf_cÚ
+(
+dev
+, 
+devun™
+);
+
+217 
+	}
+}
+
+221 
+	$Œy©ch_¹şock_to_Éim”
+(
+devun™
+, 
+Éim”_soác
+ *
+bus
+, 
+busun™
+)
+
+223 
+¹şock_soác
+ *
+dev
+;
+
+224 
+»suÉ
+;
+
+226 
+dev
+ = 
+	`©ch_¹şock_to_Éim”
+(
+devun™
+, 
+bus
+);
+
+227 ià(
+dev
+==
+NULL
+) {
+
+230 
+	`k´štf
+("¹şock%d‡ˆÉim”%d", 
+devun™
+, 
+busun™
+);
+
+231 
+»suÉ
+ = 
+	`cÚfig_¹şock
+(
+dev
+, 
+devun™
+);
+
+232 ià(
+»suÉ
+ != 0) {
+
+233 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+235  
+»suÉ
+;
+
+237 
+	`k´štf
+("\n");
+
+238 
+Ãxtun™_¹şock
+ = 
+devun™
++1;
+
+239 
+	`autocÚf_¹şock
+(
+dev
+, 
+devun™
+);
+
+241 
+	}
+}
+
+245 
+	$Œy©ch_¿ndom_to_Ìªdom
+(
+devun™
+, 
+Ìªdom_soác
+ *
+bus
+, 
+busun™
+)
+
+247 
+¿ndom_soác
+ *
+dev
+;
+
+248 
+»suÉ
+;
+
+250 
+dev
+ = 
+	`©ch_¿ndom_to_Ìªdom
+(
+devun™
+, 
+bus
+);
+
+251 ià(
+dev
+==
+NULL
+) {
+
+254 
+	`k´štf
+("¿ndom%d‡ˆÌªdom%d", 
+devun™
+, 
+busun™
+);
+
+255 
+»suÉ
+ = 
+	`cÚfig_¿ndom
+(
+dev
+, 
+devun™
+);
+
+256 ià(
+»suÉ
+ != 0) {
+
+257 
+	`k´štf
+(": %s\n", 
+	`¡»¼Ü
+(
+»suÉ
+));
+
+259  
+»suÉ
+;
+
+261 
+	`k´štf
+("\n");
+
+262 
+Ãxtun™_¿ndom
+ = 
+devun™
++1;
+
+263 
+	`autocÚf_¿ndom
+(
+dev
+, 
+devun™
+);
+
+265 
+	}
+}
+
+270 
+	$autocÚf_cÚ
+(
+cÚ_soác
+ *
+bus
+, 
+busun™
+)
+
+272 ()
+bus
+; ()
+busun™
+;
+
+273 
+	}
+}
+
+277 
+	$autocÚf_l£r
+(
+l£r_soác
+ *
+bus
+, 
+busun™
+)
+
+279 ()
+bus
+; ()
+busun™
+;
+
+281 ià(
+Ãxtun™_cÚ
+ <= 0) {
+
+282 
+	`Œy©ch_cÚ_to_l£r
+(0, 
+bus
+, 
+busun™
+);
+
+285 
+	}
+}
+
+289 
+	$autocÚf_lhd
+(
+lhd_soác
+ *
+bus
+, 
+busun™
+)
+
+291 ()
+bus
+; ()
+busun™
+;
+
+292 
+	}
+}
+
+296 
+	$autocÚf_emu
+(
+emu_soác
+ *
+bus
+, 
+busun™
+)
+
+298 ()
+bus
+; ()
+busun™
+;
+
+299 
+	}
+}
+
+303 
+	$autocÚf_¿ndom
+(
+¿ndom_soác
+ *
+bus
+, 
+busun™
+)
+
+305 ()
+bus
+; ()
+busun™
+;
+
+306 
+	}
+}
+
+310 
+	$autocÚf_Éim”
+(
+Éim”_soác
+ *
+bus
+, 
+busun™
+)
+
+312 ()
+bus
+; ()
+busun™
+;
+
+314 ià(
+Ãxtun™_b“p
+ <= 0) {
+
+315 
+	`Œy©ch_b“p_to_Éim”
+(0, 
+bus
+, 
+busun™
+);
+
+319 ià(
+Ãxtun™_¹şock
+ <= 0) {
+
+320 
+	`Œy©ch_¹şock_to_Éim”
+(0, 
+bus
+, 
+busun™
+);
+
+323 
+	}
+}
+
+326 
+	$autocÚf_Ïmebus
+(
+Ïmebus_soác
+ *
+bus
+, 
+busun™
+)
+
+328 ()
+bus
+; ()
+busun™
+;
+
+330 
+»suÉ
+, 
+devun™
+=
+Ãxtun™_emu
+;
+
+332 
+»suÉ
+ = 
+	`Œy©ch_emu_to_Ïmebus
+(
+devun™
+, 
+bus
+, 
+busun™
+);
+
+333 
+devun™
+++;
+
+334 } 
+»suÉ
+==0);
+
+337 
+»suÉ
+, 
+devun™
+=
+Ãxtun™_É¿û
+;
+
+339 
+»suÉ
+ = 
+	`Œy©ch_É¿û_to_Ïmebus
+(
+devun™
+, 
+bus
+, 
+busun™
+);
+
+340 
+devun™
+++;
+
+341 } 
+»suÉ
+==0);
+
+344 
+»suÉ
+, 
+devun™
+=
+Ãxtun™_Éim”
+;
+
+346 
+»suÉ
+ = 
+	`Œy©ch_Éim”_to_Ïmebus
+(
+devun™
+, 
+bus
+, 
+busun™
+);
+
+347 
+devun™
+++;
+
+348 } 
+»suÉ
+==0);
+
+351 
+»suÉ
+, 
+devun™
+=
+Ãxtun™_Ìªdom
+;
+
+353 
+»suÉ
+ = 
+	`Œy©ch_Ìªdom_to_Ïmebus
+(
+devun™
+, 
+bus
+, 
+busun™
+);
+
+354 
+devun™
+++;
+
+355 } 
+»suÉ
+==0);
+
+358 
+»suÉ
+, 
+devun™
+=
+Ãxtun™_lhd
+;
+
+360 
+»suÉ
+ = 
+	`Œy©ch_lhd_to_Ïmebus
+(
+devun™
+, 
+bus
+, 
+busun™
+);
+
+361 
+devun™
+++;
+
+362 } 
+»suÉ
+==0);
+
+365 
+»suÉ
+, 
+devun™
+=
+Ãxtun™_l£r
+;
+
+367 
+»suÉ
+ = 
+	`Œy©ch_l£r_to_Ïmebus
+(
+devun™
+, 
+bus
+, 
+busun™
+);
+
+368 
+devun™
+++;
+
+369 } 
+»suÉ
+==0);
+
+371 
+	}
+}
+
+375 
+	$autocÚf_b“p
+(
+b“p_soác
+ *
+bus
+, 
+busun™
+)
+
+377 ()
+bus
+; ()
+busun™
+;
+
+378 
+	}
+}
+
+382 
+	$autocÚf_Ìªdom
+(
+Ìªdom_soác
+ *
+bus
+, 
+busun™
+)
+
+384 ()
+bus
+; ()
+busun™
+;
+
+386 ià(
+Ãxtun™_¿ndom
+ <= 0) {
+
+387 
+	`Œy©ch_¿ndom_to_Ìªdom
+(0, 
+bus
+, 
+busun™
+);
+
+390 
+	}
+}
+
+394 
+	$autocÚf_¹şock
+(
+¹şock_soác
+ *
+bus
+, 
+busun™
+)
+
+396 ()
+bus
+; ()
+busun™
+;
+
+397 
+	}
+}
+
+401 
+	$autocÚf_É¿û
+(
+É¿û_soác
+ *
+bus
+, 
+busun™
+)
+
+403 ()
+bus
+; ()
+busun™
+;
+
+404 
+	}
+}
+
+407 
+	$p£udocÚfig
+()
+
+409 
+	}
+}
+
+	@kern/compile/ASST2/autoconf.h
+
+2 #iâdeà
+_AUTOCONF_H_
+
+
+3 
+	#_AUTOCONF_H_
+
+
+	)
+
+5 
+	gÏmebus_soác
+;
+
+6 
+	gemu_soác
+;
+
+7 
+	gÉ¿û_soác
+;
+
+8 
+	gÉim”_soác
+;
+
+9 
+	gÌªdom_soác
+;
+
+10 
+	glhd_soác
+;
+
+11 
+	gl£r_soác
+;
+
+12 
+	gb“p_soác
+;
+
+13 
+	gcÚ_soác
+;
+
+14 
+	g¹şock_soác
+;
+
+15 
+	g¿ndom_soác
+;
+
+17 
+autocÚf_Ïmebus
+(
+Ïmebus_soác
+ *
+dev
+, 
+un™
+);
+
+19 
+emu_soác
+ *
+©ch_emu_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+);
+
+20 
+É¿û_soác
+ *
+©ch_É¿û_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+);
+
+21 
+Éim”_soác
+ *
+©ch_Éim”_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+);
+
+22 
+Ìªdom_soác
+ *
+©ch_Ìªdom_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+);
+
+23 
+lhd_soác
+ *
+©ch_lhd_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+);
+
+24 
+l£r_soác
+ *
+©ch_l£r_to_Ïmebus
+(
+devun™
+, 
+Ïmebus_soác
+ *
+bus
+);
+
+25 
+b“p_soác
+ *
+©ch_b“p_to_Éim”
+(
+devun™
+, 
+Éim”_soác
+ *
+bus
+);
+
+26 
+cÚ_soác
+ *
+©ch_cÚ_to_l£r
+(
+devun™
+, 
+l£r_soác
+ *
+bus
+);
+
+27 
+¹şock_soác
+ *
+©ch_¹şock_to_Éim”
+(
+devun™
+, 
+Éim”_soác
+ *
+bus
+);
+
+28 
+¿ndom_soác
+ *
+©ch_¿ndom_to_Ìªdom
+(
+devun™
+, 
+Ìªdom_soác
+ *
+bus
+);
+
+30 
+cÚfig_emu
+(
+emu_soác
+ *
+dev
+, 
+un™
+);
+
+31 
+cÚfig_É¿û
+(
+É¿û_soác
+ *
+dev
+, 
+un™
+);
+
+32 
+cÚfig_Éim”
+(
+Éim”_soác
+ *
+dev
+, 
+un™
+);
+
+33 
+cÚfig_Ìªdom
+(
+Ìªdom_soác
+ *
+dev
+, 
+un™
+);
+
+34 
+cÚfig_lhd
+(
+lhd_soác
+ *
+dev
+, 
+un™
+);
+
+35 
+cÚfig_l£r
+(
+l£r_soác
+ *
+dev
+, 
+un™
+);
+
+36 
+cÚfig_b“p
+(
+b“p_soác
+ *
+dev
+, 
+un™
+);
+
+37 
+cÚfig_cÚ
+(
+cÚ_soác
+ *
+dev
+, 
+un™
+);
+
+38 
+cÚfig_¹şock
+(
+¹şock_soác
+ *
+dev
+, 
+un™
+);
+
+39 
+cÚfig_¿ndom
+(
+¿ndom_soác
+ *
+dev
+, 
+un™
+);
+
+41 
+p£udocÚfig
+();
+
+	@kern/compile/ASST2/opt-A0.h
+
+2 #iâdeà
+_OPT_A0_H_
+
+
+3 
+	#_OPT_A0_H_
+
+
+	)
+
+4 
+	#OPT_A0
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-A1.h
+
+2 #iâdeà
+_OPT_A1_H_
+
+
+3 
+	#_OPT_A1_H_
+
+
+	)
+
+4 
+	#OPT_A1
+ 1
+
+	)
+
+	@kern/compile/ASST2/opt-A2.h
+
+2 #iâdeà
+_OPT_A2_H_
+
+
+3 
+	#_OPT_A2_H_
+
+
+	)
+
+4 
+	#OPT_A2
+ 1
+
+	)
+
+	@kern/compile/ASST2/opt-A3.h
+
+2 #iâdeà
+_OPT_A3_H_
+
+
+3 
+	#_OPT_A3_H_
+
+
+	)
+
+4 
+	#OPT_A3
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-A4.h
+
+2 #iâdeà
+_OPT_A4_H_
+
+
+3 
+	#_OPT_A4_H_
+
+
+	)
+
+4 
+	#OPT_A4
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-A5.h
+
+2 #iâdeà
+_OPT_A5_H_
+
+
+3 
+	#_OPT_A5_H_
+
+
+	)
+
+4 
+	#OPT_A5
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-dumbvm.h
+
+2 #iâdeà
+_OPT_DUMBVM_H_
+
+
+3 
+	#_OPT_DUMBVM_H_
+
+
+	)
+
+4 
+	#OPT_DUMBVM
+ 1
+
+	)
+
+	@kern/compile/ASST2/opt-net.h
+
+2 #iâdeà
+_OPT_NET_H_
+
+
+3 
+	#_OPT_NET_H_
+
+
+	)
+
+4 
+	#OPT_NET
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-netfs.h
+
+2 #iâdeà
+_OPT_NETFS_H_
+
+
+3 
+	#_OPT_NETFS_H_
+
+
+	)
+
+4 
+	#OPT_NETFS
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-noasserts.h
+
+2 #iâdeà
+_OPT_NOASSERTS_H_
+
+
+3 
+	#_OPT_NOASSERTS_H_
+
+
+	)
+
+4 
+	#OPT_NOASSERTS
+ 0
+
+	)
+
+	@kern/compile/ASST2/opt-sfs.h
+
+2 #iâdeà
+_OPT_SFS_H_
+
+
+3 
+	#_OPT_SFS_H_
+
+
+	)
+
+4 
+	#OPT_SFS
+ 1
+
+	)
+
+	@kern/compile/ASST2/opt-synchprobs.h
+
+2 #iâdeà
+_OPT_SYNCHPROBS_H_
+
+
+3 
+	#_OPT_SYNCHPROBS_H_
+
+
+	)
+
+4 
+	#OPT_SYNCHPROBS
+ 0
+
+	)
+
+	@kern/compile/ASST2/vers.c
+
+2 cÚ¡ 
+	gbudv”siÚ
+ = 7;
+
+3 cÚ¡ 
+	gbudcÚfig
+[] = "ASST2";
 
 	@kern/dev/generic/beep.c
 
@@ -46641,10 +48693,10 @@ tf
 
 47 
 ’‹r_fÜked_´oûss
-(
-Œ­äame
- *
-tf
+(* 
+¬g1
+, 
+¬g2
 );
 
 50 
@@ -46716,6 +48768,18 @@ pid_t
 );
 
 65 
+sys_fÜk
+(
+Œ­äame
+ *
+tf
+, 
+pid_t
+ *
+»tv®
+);
+
+66 
 sys_wa™pid
 (
 pid_t
@@ -50827,29 +52891,29 @@ pos
 	~<vfs.h
 >
 
-43 
+44 
 ušt32_t
  
 	gdbæags
  = 0;
 
-46 
+47 
 lock
  *
 	gk´štf_lock
 ;
 
-49 
+50 
 ¥šlock
  
 	gk´štf_¥šlock
 ;
 
-63 
+64 
 	$k´štf_boÙ¡¿p
 ()
 
-65 
+66 
 	`KASSERT
 (
 k´štf_lock
@@ -50857,33 +52921,33 @@ k´štf_lock
 NULL
 );
 
-67 
+68 
 k´štf_lock
  = 
 	`lock_ü—‹
 ("kprintf_lock");
 
-68 ià(
+69 ià(
 k´štf_lock
  =ğ
 NULL
 ) {
 
-69 
+70 
 	`·nic
 ("Could‚ot create kprintf_lock\n");
 
-71 
+72 
 	`¥šlock_š™
 (&
 k´štf_¥šlock
 );
 
-72 
+73 
 	}
 }
 
-79 
+80 
 	$cÚsŞe_£nd
 (*
 junk
@@ -50895,23 +52959,23 @@ size_t
 Ën
 )
 
-81 
+82 
 size_t
  
 i
 ;
 
-83 ()
+84 ()
 junk
 ;
 
-85 
+86 
 i
 =0; i<
 Ën
 ; i++) {
 
-86 
+87 
 	`putch
 (
 d©a
@@ -50919,33 +52983,33 @@ d©a
 i
 ]);
 
-88 
+89 
 	}
 }
 
-94 
+95 
 	$k´štf
 (cÚ¡ *
 fmt
 , ...)
 
-96 
+97 
 ch¬s
 ;
 
-97 
+98 
 va_li¡
  
 ­
 ;
 
-98 
+99 
 boŞ
  
 dŞock
 ;
 
-100 
+101 
 dŞock
  = 
 k´štf_lock
@@ -50953,7 +53017,7 @@ k´štf_lock
 NULL
 
 
-101 && 
+102 && 
 cu¹h»ad
 ->
 t_š_š‹¼u±
@@ -50961,33 +53025,33 @@ t_š_š‹¼u±
 çl£
 
 
-102 && 
+103 && 
 cu¹h»ad
 ->
 t_lhigh_couÁ
  == 0;
 
-104 ià(
+105 ià(
 dŞock
 ) {
 
-105 
+106 
 	`lock_acquœe
 (
 k´štf_lock
 );
 
-108 
+109 
 	`¥šlock_acquœe
 (&
 k´štf_¥šlock
 );
 
-110 
+111 
 	`putch_´•¬e
 ();
 
-112 
+113 
 	`va_¡¬t
 (
 ­
@@ -50995,7 +53059,7 @@ k´štf_¥šlock
 fmt
 );
 
-113 
+114 
 ch¬s
  = 
 	`__v´štf
@@ -51009,97 +53073,97 @@ fmt
 ­
 );
 
-114 
+115 
 	`va_’d
 (
 ­
 );
 
-116 
+117 
 	`putch_com¶‘e
 ();
 
-117 ià(
+118 ià(
 dŞock
 ) {
 
-118 
+119 
 	`lock_»Ëa£
 (
 k´štf_lock
 );
 
-121 
+122 
 	`¥šlock_»Ëa£
 (&
 k´štf_¥šlock
 );
 
-124  
+125  
 ch¬s
 ;
 
-125 
+126 
 	}
 }
 
-133 
+134 
 	$·nic
 (cÚ¡ *
 fmt
 , ...)
 
-135 
+136 
 va_li¡
  
 ­
 ;
 
-148 vŞ©
+149 vŞ©
 ev
 ;
 
-150 ià(
+151 ià(
 ev
  == 0) {
 
-151 
+152 
 ev
  = 1;
 
-159 
+160 
 	`¥lhigh
 ();
 
-162 ià(
+163 ià(
 ev
  == 1) {
 
-163 
+164 
 ev
  = 2;
 
-166 
+167 
 	`th»ad_·nic
 ();
 
-169 ià(
+170 ià(
 ev
  == 2) {
 
-170 
+171 
 ev
  = 3;
 
-173 
+174 
 	`k´štf
 ("panic: ");
 
-174 
+175 
 	`putch_´•¬e
 ();
 
-175 
+176 
 	`va_¡¬t
 (
 ­
@@ -51107,7 +53171,7 @@ ev
 fmt
 );
 
-176 
+177 
 	`__v´štf
 (
 cÚsŞe_£nd
@@ -51119,45 +53183,45 @@ fmt
 ­
 );
 
-177 
+178 
 	`va_’d
 (
 ­
 );
 
-178 
+179 
 	`putch_com¶‘e
 ();
 
-181 ià(
+182 ià(
 ev
  == 3) {
 
-182 
+183 
 ev
  = 4;
 
-185 
+186 
 	`vfs_sync
 ();
 
-188 ià(
+189 ià(
 ev
  == 4) {
 
-189 
+190 
 ev
  = 5;
 
-192 
+193 
 	`mašbus_·nic
 ();
 
-200 
+201 
 	}
 }
 
-206 
+207 
 	$badas£¹
 (cÚ¡ *
 ex´
@@ -51169,11 +53233,11 @@ lše
 func
 )
 
-208 
+209 
 	`·nic
 ("Assertion failed: %s,‡t %s:%d (%s)\n",
 
-209 
+210 
 ex´
 , 
 fe
@@ -51183,7 +53247,7 @@ lše
 func
 );
 
-210 
+211 
 	}
 }
 
@@ -58599,7 +60663,121 @@ pid_t
 	}
 }
 
-65 
+62 
+u´oc_th»ad
+(*
+‹mp_Œ
+, 
+k
+);
+
+64 
+	$u´oc_th»ad
+(*
+‹mp_Œ
+, 
+k
+) {
+
+65 ()
+k
+;
+
+66 ()
+‹mp_Œ
+;
+
+67 
+	`k´štf
+("Child - I made itohe child user uproc_thread! \n");
+
+68 
+	`th»ad_ex™
+();
+
+69 
+	}
+}
+
+71 
+	$sys_fÜk
+(
+Œ­äame
+ *
+tf
+, 
+pid_t
+ *
+»tv®
+) {
+
+75 
+Œ­äame
+ *
+‹mp_tf
+;
+
+76 
+”r
+;
+
+77 
+	`DEBUG
+(
+DB_SYSCALL
+, "Sycall: sys_fork()\n");
+
+78 
+‹mp_tf
+ = 
+	`km®loc
+((
+tf
+));
+
+79 
+‹mp_tf
+ = 
+tf
+;
+
+80 
+”r
+ = 
+	`th»ad_fÜk
+("Chd Th»ad", 
+NULL
+, (*)
+’‹r_fÜked_´oûss
+, 
+‹mp_tf
+, 0);
+
+81 if(
+”r
+) {
+
+82  
+”r
+;
+
+84 
+	`k´štf
+("Parent„eturning‡fterhread fork \n");
+
+85 *
+»tv®
+ = 2;
+
+86 
+	`k´štf
+("Parent finally†eaving sys_fork\n");
+
+88 
+	}
+}
+
+94 
 	$sys_wa™pid
 (
 pid_t
@@ -58607,43 +60785,43 @@ pid_t
 pid
 ,
 
-66 
+95 
 u£½Œ_t
  
 ¡©us
 ,
 
-67 
+96 
 İtiÚs
 ,
 
-68 
+97 
 pid_t
  *
 »tv®
 )
 
-70 
+99 
 ex™¡©us
 ;
 
-71 
+100 
 »suÉ
 ;
 
-82 ià(
+111 ià(
 İtiÚs
  != 0) {
 
-83 (
+112 (
 EINVAL
 );
 
-86 
+115 
 ex™¡©us
  = 0;
 
-87 
+116 
 »suÉ
  = 
 	`cİyout
@@ -58653,21 +60831,21 @@ ex™¡©us
 ¡©us
 ,());
 
-88 ià(
+117 ià(
 »suÉ
 ) {
 
-89 (
+118 (
 »suÉ
 );
 
-91 *
+120 *
 »tv®
  = 
 pid
 ;
 
-93 
+122 
 	}
 }
 
@@ -94530,6 +96708,202 @@ RB_POWEROFF
 );
 
 11 
+	}
+}
+
+	@user/my-testbin/procstub/procstub.c
+
+4 
+	~<uni¡d.h
+>
+
+5 
+	~<¡dio.h
+>
+
+6 
+	~<¡ršg.h
+>
+
+7 
+	~<¡dlib.h
+>
+
+8 
+	~<”r.h
+>
+
+11 
+	$maš
+()
+
+13 
+	`´štf
+("Beggining Stubtest... \n");
+
+15 vŞ©
+mypid
+,
+ªÙh”pid
+;
+
+16 
+mypid
+ = 
+	`g‘pid
+();
+
+17 
+	`´štf
+("pid: %d \n",
+mypid
+);
+
+19 
+¡©us
+;
+
+20 
+ªÙh”pid
+ = 5;
+
+21 
+	`´štf
+("wa™pid: %d \n",
+	`wa™pid
+(
+ªÙh”pid
+,&
+¡©us
+, 0));
+
+23 
+pid_t
+ 
+pid
+;
+
+24 
+pid
+ = 
+	`fÜk
+();
+
+25 if(
+pid
+ > 0) {
+
+26 
+	`´štf
+("P...I'm‡…arent \n");
+
+28 
+	`´štf
+("C...I'm‡ child \n");
+
+32 
+	`_ex™
+(0);
+
+34 
+	}
+}
+
+	@user/my-testbin/stubtest/stubtest.c
+
+4 
+	~<uni¡d.h
+>
+
+5 
+	~<¡dio.h
+>
+
+6 
+	~<¡ršg.h
+>
+
+7 
+	~<¡dlib.h
+>
+
+8 
+	~<”r.h
+>
+
+11 
+	$maš
+()
+
+13 
+	`´štf
+("Beggining Stubtest... \n");
+
+15 vŞ©
+mypid
+,
+ªÙh”pid
+;
+
+16 
+mypid
+ = 
+	`g‘pid
+();
+
+17 
+	`´štf
+("pid: %d \n",
+mypid
+);
+
+19 
+¡©us
+;
+
+20 
+ªÙh”pid
+ = 5;
+
+21 
+	`´štf
+("wa™pid: %d \n",
+	`wa™pid
+(
+ªÙh”pid
+,&
+¡©us
+, 0));
+
+23 
+pid_t
+ 
+pid
+;
+
+24 
+pid
+ = 
+	`fÜk
+();
+
+25 if(
+pid
+ > 0) {
+
+26 
+	`´štf
+("P...I'm‡…arent \n");
+
+28 
+	`´štf
+("C...I'm‡ child \n");
+
+32 
+	`_ex™
+(0);
+
+34 
 	}
 }
 
@@ -138883,8 +141257,8 @@ i
 1
 .
 0
-520
-14619
+537
+15137
 build/install/hostinclude/hostcompat.h
 build/install/include/assert.h
 build/install/include/err.h
@@ -139021,6 +141395,21 @@ kern/compile/ASST1/opt-noasserts.h
 kern/compile/ASST1/opt-sfs.h
 kern/compile/ASST1/opt-synchprobs.h
 kern/compile/ASST1/vers.c
+kern/compile/ASST2/autoconf.c
+kern/compile/ASST2/autoconf.h
+kern/compile/ASST2/opt-A0.h
+kern/compile/ASST2/opt-A1.h
+kern/compile/ASST2/opt-A2.h
+kern/compile/ASST2/opt-A3.h
+kern/compile/ASST2/opt-A4.h
+kern/compile/ASST2/opt-A5.h
+kern/compile/ASST2/opt-dumbvm.h
+kern/compile/ASST2/opt-net.h
+kern/compile/ASST2/opt-netfs.h
+kern/compile/ASST2/opt-noasserts.h
+kern/compile/ASST2/opt-sfs.h
+kern/compile/ASST2/opt-synchprobs.h
+kern/compile/ASST2/vers.c
 kern/dev/generic/beep.c
 kern/dev/generic/beep.h
 kern/dev/generic/console.c
@@ -139280,6 +141669,8 @@ user/lib/libc/unix/err.c
 user/lib/libc/unix/errno.c
 user/lib/libc/unix/getcwd.c
 user/my-testbin/example/example.c
+user/my-testbin/procstub/procstub.c
+user/my-testbin/stubtest/stubtest.c
 user/sbin/dumpsfs/dumpsfs.c
 user/sbin/halt/halt.c
 user/sbin/mksfs/disk.c
