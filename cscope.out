@@ -1,4 +1,4 @@
-cscope 15 $HOME/os161               0000710155
+cscope 15 $HOME/os161               0000710353
 	@build/install/hostinclude/hostcompat.h
 
 31 
@@ -13147,33 +13147,31 @@ SYS_f‹k
 îr
  = 
 	`sys_f‹k
-((
-pid_t
- *)&
-ªtvÆ
-,
-
-137 
+(
 tf
+, (
+pid_t
+*)&
+ªtvÆ
 );
 
-143 
+142 
 	`k¥ötf
 ("Unknow¿sysˇŒ %d\n", 
 ˇŒno
 );
 
-144 
+143 
 îr
  = 
 ENOSYS
 ;
 
-149 i‡(
+148 i‡(
 îr
 ) {
 
-155 
+154 
 tf
 ->
 tf_v0
@@ -13181,13 +13179,13 @@ tf_v0
 îr
 ;
 
-156 
+155 
 tf
 ->
 tf_a3
  = 1;
 
-160 
+159 
 tf
 ->
 tf_v0
@@ -13195,19 +13193,19 @@ tf_v0
 ªtvÆ
 ;
 
-161 
+160 
 tf
 ->
 tf_a3
  = 0;
 
-169 
+168 
 tf
 ->
 tf_ïc
  += 4;
 
-172 
+171 
 	`KASSERT
 (
 cuπhªad
@@ -13215,7 +13213,7 @@ cuπhªad
 t_cur•l
  == 0);
 
-174 
+173 
 	`KASSERT
 (
 cuπhªad
@@ -13223,11 +13221,11 @@ cuπhªad
 t_ùlhigh_cou¡
  == 0);
 
-175 
+174 
 	}
 }
 
-186 
+185 
 	$íãr_f‹ked_¥o˚ss
 (* 
 ¨g1
@@ -13235,17 +13233,17 @@ t_ùlhigh_cou¡
 ¨g2
 )
 
-188 
+187 
 å≠‰ame
  
 tf
 ;
 
-189 (Ë
+188 (Ë
 ¨g2
 ;
 
-191 
+190 
 tf
  = *(
 å≠‰ame
@@ -13253,13 +13251,13 @@ tf
 ¨g1
 ;
 
-193 
+192 
 	`mùs_u£rmode
 (&
 tf
 );
 
-194 
+193 
 	}
 }
 
@@ -21991,7 +21989,7 @@ _OPT_SYNCHPROBS_H_
 
 2 c⁄° 
 	gbuûdvîsi⁄
- = 7;
+ = 27;
 
 3 c⁄° 
 	gbuûdc⁄fig
@@ -60556,26 +60554,30 @@ e_íåy
 >
 
 10 
-	~<addr•a˚.h
+	~<mùs/å≠‰ame.h
 >
 
 11 
+	~<addr•a˚.h
+>
+
+12 
 	~<c›yöout.h
 >
 
-16 
+17 
 	$sys__exô
 (
 exôcode
 ) {
 
-18 
+19 
 addr•a˚
  *
 as
 ;
 
-19 
+20 
 ¥oc
  *
 p
@@ -60583,11 +60585,11 @@ p
 cuΩroc
 ;
 
-22 ()
+23 ()
 exôcode
 ;
 
-24 
+25 
 	`DEBUG
 (
 DB_SYSCALL
@@ -60595,7 +60597,7 @@ DB_SYSCALL
 exôcode
 );
 
-26 
+27 
 	`KASSERT
 (
 cuΩroc
@@ -60605,11 +60607,11 @@ p_addr•a˚
 NULL
 );
 
-27 
+28 
 	`as_dó˘iv©e
 ();
 
-35 
+36 
 as
  = 
 	`cuΩroc_£ès
@@ -60617,37 +60619,37 @@ as
 NULL
 );
 
-36 
+37 
 	`as_de°roy
 (
 as
 );
 
-40 
+41 
 	`¥oc_ªmthªad
 (
 cuπhªad
 );
 
-44 
+45 
 	`¥oc_de°roy
 (
 p
 );
 
-46 
+47 
 	`thªad_exô
 ();
 
-48 
+49 
 	`∑nic
 ("return fromÅhread_exit in sys_exit\n");
 
-49 
+50 
 	}
 }
 
-54 
+55 
 	$sys_gëpid
 (
 pid_t
@@ -60655,15 +60657,15 @@ pid_t
 ªtvÆ
 )
 
-58 *
+59 *
 ªtvÆ
  = 1;
 
-60 
+61 
 	}
 }
 
-62 
+63 
 u¥oc_thªad
 (*
 ãmp_å
@@ -60671,7 +60673,7 @@ u¥oc_thªad
 k
 );
 
-64 
+65 
 	$u¥oc_thªad
 (*
 ãmp_å
@@ -60679,27 +60681,37 @@ k
 k
 ) {
 
-65 ()
+66 ()
 k
 ;
 
-66 ()
+67 ()
 ãmp_å
 ;
 
-67 
+68 
 	`k¥ötf
 ("Child - I made itÅoÅhe child user uproc_thread! \n");
 
-68 
+69 
+i
+ = 0; i < 10000; i++) {
+
+71 
+	`¥oc_ªmthªad
+(
+cuπhªad
+);
+
+72 
 	`thªad_exô
 ();
 
-69 
+73 
 	}
 }
 
-71 
+75 
 	$sys_f‹k
 (
 å≠‰ame
@@ -60711,73 +60723,93 @@ pid_t
 ªtvÆ
 ) {
 
-75 
+79 
 å≠‰ame
  *
 ãmp_tf
 ;
 
-76 
+80 
 îr
 ;
 
-77 
+81 
+«me
+[16];
+
+82 
 	`DEBUG
 (
 DB_SYSCALL
 , "Sycall: sys_fork()\n");
 
-78 
+83 
 ãmp_tf
  = 
 	`kmÆloc
-((
-tf
+((
+å≠‰ame
 ));
 
-79 
+84 *
 ãmp_tf
- = 
+ = *
 tf
 ;
 
-80 
+85 
+	`¢¥ötf
+(
+«me
+, (name), "childÅhread");
+
+86 
 îr
  = 
 	`thªad_f‹k
-("Chûd Thªad", 
+(
+«me
+, 
 NULL
-, (*)
-íãr_f‹ked_¥o˚ss
+, 
+u¥oc_thªad
 , 
 ãmp_tf
 , 0);
 
-81 if(
+87 if(
 îr
 ) {
 
-82  
+88  
 îr
 ;
 
-84 
+90 
+j
+ = 0; j < 1; j++) {}
+
+91 
 	`k¥ötf
 ("ParentÑeturningáfterÅhread fork \n");
 
-85 *
+92 *
 ªtvÆ
  = 2;
 
-86 
+93 
 	`k¥ötf
 ("Parent finallyÜeaving sys_fork\n");
 
-88 
+94 
+i
+; i < 1; i++) {}
+
+96 
 	}
 }
 
-94 
+102 
 	$sys_waôpid
 (
 pid_t
@@ -60785,43 +60817,43 @@ pid_t
 pid
 ,
 
-95 
+103 
 u£Ωå_t
  
 °©us
 ,
 
-96 
+104 
 ›ti⁄s
 ,
 
-97 
+105 
 pid_t
  *
 ªtvÆ
 )
 
-99 
+107 
 exô°©us
 ;
 
-100 
+108 
 ªsu…
 ;
 
-111 i‡(
+119 i‡(
 ›ti⁄s
  != 0) {
 
-112 (
+120 (
 EINVAL
 );
 
-115 
+123 
 exô°©us
  = 0;
 
-116 
+124 
 ªsu…
  = 
 	`c›yout
@@ -60831,21 +60863,21 @@ exô°©us
 °©us
 ,());
 
-117 i‡(
+125 i‡(
 ªsu…
 ) {
 
-118 (
+126 (
 ªsu…
 );
 
-120 *
+128 *
 ªtvÆ
  = 
 pid
 ;
 
-122 
+130 
 	}
 }
 

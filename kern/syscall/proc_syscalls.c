@@ -66,8 +66,8 @@ void uproc_thread(void *temp_tr, unsigned long k) {
 	(void)k;
 	(void)temp_tr;
 	kprintf("Child - I made it to the child user uproc_thread! \n");
-	//for(int i = 0; i < 10000; i++) {
-	//}
+	for(int i = 0; i < 10000; i++) {
+	}
 	proc_remthread(curthread);
 	thread_exit();
 }
@@ -87,12 +87,11 @@ int sys_fork(struct trapframe *tf, pid_t *retval) {
 	if(err) {
 	  return err;
 	}
-	for(int j = 0; j < 1000000; j++) {}
+	for(int j = 0; j < 100000; j++) {}
 	kprintf("Parent returning after thread fork \n");
 	*retval = 2;
 	kprintf("Parent finally leaving sys_fork\n");
-	for(int i; i < 10000; i++) {
-	}
+	for(int i=0; i < 100000; i++) {}
 	return(0);
 }
 
